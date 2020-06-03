@@ -6,12 +6,12 @@ public class Demo {
 
     @BeforeClass(alwaysRun = true)
     void prepareData() {
+        Assert.assertEquals(1, 5);
     }
 
     @Test
     void demoTest() {
         System.out.println("test started!");
-        Assert.assertEquals(1, 2);
     }
 
 

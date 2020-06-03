@@ -17,8 +17,19 @@ dependencies {
 test {
     // enable TestNG support (default is JUnit)
     useTestNG()
-
-
     // show standard out and standard error of the test JVM(s) on the console
     testLogging.showStandardStreams = true
+}
+
+tasks.withType(Test) {
+    testLogging {
+        afterSuite { desc, result ->
+            if (!desc.parent) { // will match the outermost suite
+                def output = "Results: ${result.resultType} (${result.testCount} tests, ${result.successfulTestCount} successes, ${result.failedTestCount} failures, ${result.skippedTestCount} skipped)"
+                def startItem = '|  ', endItem = '  |'
+                def repeatLength = startItem.length() + output.length() + endItem.length()
+                println('\n' + ('-' * repeatLength) + '\n' + startItem + output + endItem + '\n' + ('-' * repeatLength))
+            }
+        }
+    }
 }
