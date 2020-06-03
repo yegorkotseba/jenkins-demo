@@ -6,7 +6,7 @@ public class Demo {
 
     @BeforeClass(alwaysRun = true)
     void prepareData() {
-        Assert.assertEquals(1, 5);
+
     }
 
     @Test
