@@ -12,7 +12,7 @@ public class Demo {
 
     @Test
     void demoTest() {
-        throw new SkipException("test skip");
+//        throw new SkipException("test skip");
 
     }
 
