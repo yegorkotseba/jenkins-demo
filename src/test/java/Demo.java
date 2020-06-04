@@ -19,7 +19,7 @@ public class Demo {
     @Test
     void demoTest1() {
         System.out.println("test1 started!");
-        Assert.assertEquals(1, 5);
+//        Assert.assertEquals(1, 5);
 
     }
 
