@@ -1,4 +1,5 @@
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -11,8 +12,7 @@ public class Demo {
 
     @Test
     void demoTest() {
-        System.out.println("test started!");
-        Assert.assertEquals(1, 5);
+        throw new SkipException("test skip");
 
     }
 
