@@ -7,7 +7,7 @@ public class Demo {
 
     @BeforeClass(alwaysRun = true)
     void prepareData() {
-        throw new SkipException("skip");
+//        throw new SkipException("skip");
     }
 
     @Test
