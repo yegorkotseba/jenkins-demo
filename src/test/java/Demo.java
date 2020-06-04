@@ -12,6 +12,8 @@ public class Demo {
     @Test
     void demoTest() {
         System.out.println("test started!");
+        Assert.assertEquals(1, 5);
+
     }
 
 
