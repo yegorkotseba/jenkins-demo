@@ -16,7 +16,7 @@ pipeline {
                               junit '**/build/test-results/test/*.xml' //make the junit test results available in any case (success & failure)
                           }
                       }
-                      step([$class: 'Publisher', unstableSkips = 0])
+                      step([$class: 'Publisher', unstableSkips:0])
                   }
        }
    }
