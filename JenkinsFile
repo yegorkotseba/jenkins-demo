@@ -16,7 +16,7 @@ pipeline {
                               echo 'script failed'
                           }
                       }
-                      step([$class: 'Publisher', reportFilenamePattern: '**/testng-results', unstableSkips: 30])
+                      [$class: 'Publisher', reportFilenamePattern: '**/testng-results', unstableSkips: 30]
                   }
        }
    }
