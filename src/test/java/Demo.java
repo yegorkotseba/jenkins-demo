@@ -16,5 +16,17 @@ public class Demo {
 
     }
 
+    @Test
+    void demoTest1() {
+        System.out.println("test1 started!");
+
+
+    }
+
+    @Test
+    void demoTest2() {
+        System.out.println("test2 started!");
+
+    }
 
 }
