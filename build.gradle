@@ -18,7 +18,8 @@ test {
     // enable TestNG support (default is JUnit)
     useTestNG(){
         useDefaultListeners = true
-        systemProperty "testng.report.xml.name", System.getProperty("testng.report.xml.name")
+        systemProperty "testng.report.xml.name",  "testng"
+//        systemProperty "testng.report.xml.name", System.getProperty("testng.report.xml.name")
 //        outputDirectory = file("$projectDir/testngOutput")
     }
     // show standard out and standard error of the test JVM(s) on the console
